@@ -1,2 +1,2 @@
-* 4 * * * certbot renew --post-hook /update-haproxy-certs.sh
+0 4 * * * certbot renew --post-hook /update-haproxy-certs.sh
 
