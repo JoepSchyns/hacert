@@ -10,6 +10,6 @@ docker exec hacert certbot certonly --standalone --non-interactive --agree-tos -
 
 ### Add certificates to Haproxy
 ```
-docker exec acert /update-haproxy-certs.sh
+docker exec hacert /update-haproxy-certs.sh
 ```
 
