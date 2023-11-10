@@ -21,7 +21,7 @@ COPY haproxy.cfg /etc/haproxy/haproxy.cfg
 COPY --chmod=600 crontab /etc/cron.d/custom
 
 # cert renewal script
-COPY --chmod=111 cert-renewal.sh /cert-renewal.sh
+COPY --chmod=111 update-haproxy-certs.sh /update-haproxy-certs.sh
 
 # entrypoint
 COPY --chmod=111 entrypoint.sh /entrypoint.sh

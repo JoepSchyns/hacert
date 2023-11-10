@@ -1,2 +1,2 @@
-* 4 * * * /cert-renewal.sh
+* 4 * * * certbot renew --post-hook /update-haproxy-certs.sh
 
