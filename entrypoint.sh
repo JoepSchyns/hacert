@@ -9,7 +9,7 @@ CERT=${TEMP_DIR}/haproxy_cert.pem
 CSR=${TEMP_DIR}/haproxy.csr
 DEFAULT_PEM=${KEYS_DIR}/default.pem
 
-# Check if default.pem has been created
+# Create a selfsigned default cert
 if [ ! -e ${DEFAULT_PEM} ]; then
   openssl genrsa -des3 -passout pass:${PASSWORD} -out ${KEY} 2048 &> /dev/null
   openssl req -new -key ${KEY} -passin pass:${PASSWORD} -out ${CSR} -subj ${SUBJ} &> /dev/null
