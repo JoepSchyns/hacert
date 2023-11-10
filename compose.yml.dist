@@ -1,0 +1,10 @@
+version: "3"
+services:
+  hacert:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 880:80
+      - 8443:443
+    volumes:
+      - ./data/letsencrypt:/etc/letsencrypt
